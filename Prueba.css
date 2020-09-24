@@ -1,0 +1,18 @@
+.navegacion{
+	width:1000px;
+	margin: 30px auto;
+	background: #fff;
+	list-style:none;
+	text-decoration:none;
+	
+}
+.navegacion ul{
+	list-style:none;
+}
+.menu > li{
+	display: inline-block;
+}
+nav{
+	list-style:none;
+	text-decoration:none;
+}

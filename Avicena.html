@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--meta es para meter informacion sobre nuestra pagina al momento de buscar
+	- charset es para identificar la codificacion de caracteres
+	- utf-8 es para integrar mas cosas aparte de letras-->
+     <meta charset="utf-8"/>
+	 <title> AVICENA</title>
+	 <meta name= "descripcion" content= "primer pagina web de farmacia"/>
+	 <meta name= "Autor" content= "Esteban Bautista"/>
+	 <meta name= "keywords" content= "avicena , farmacia-consultorio "/>
+	 <meta name="viewport" content="width=device-width, initia-scale=1.0">
+<!--script es para conectar con otro documento-->
+<!--<script src="Document1.js" type= "text/javascript"-->
+<!--link tambien es para conectar con otro documento no se muy bien porque el rel, luego lo sabre-->
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body > 
+<!--ASI SE HACE UN COMENTARIO EN HTML-->
+	<div id="contenedor_carga">
+		<!--<div id="carga"></div></div>-->
+	<div class="lds-spinner loader" id="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> </div>
+	
+	<script>
+	window.onload =function(){
+		var contenedor = document.getElementById("contenedor_carga");
+		contenedor.style.visibility= "hidden";
+		contenedor.style.opacity="0";
+	}
+	</script>
+	
+	<div class="div1">
+		<header id="encabezado">
+		<img id="logo"src="Logo.jpg"/>
+			<h1 id="tituloP">AVICENA</h1>
+		<img id="logo2"src="Logo.jpg"/>
+	</header>
+	<script type="text/javascript">
+	Let tituloP = document.getElementById("tituloP");
+	
+	window.addEventListener('scroll',function(){
+		var value=window.scrollY;
+		tituloP.style.left= value * 0.15 + 'px';
+	})
+	</script>
+<!--ul es lista desordenada
+		- Es para hacer listas xD-->	
+	<nav class="menu">
+		<ul class="lista">
+			<li><a href="#">Principal</a></li>
+			<li><a href="Medicamentos.html">Medicamentos (Proximamente)</a></li>
+				<!--<ul id="medicamentos">
+					<li><a href="#">Analgesicos</a></li>
+					<li><a href="#">Musculares y desinflamatorios</a></li>
+					<li><a href="#">Estomacales</a></li>
+					<li><a href="#">Respiratorios</a></li>
+					<li><a href="#">Oftalmicos</a></li>
+					<li><a href="#">Dermatologicos</a></li>
+					<li><a href="#">Especialidades Medicas</a></li>
+					<li><a href="#">Naturistas y herbolarios</a></li>
+					<li><a href="#">Diabetes</a></li> 
+				</ul> -->
+			<li><a href="Cita Medica.html">Cita Medica</a></li>
+			<a href="https://www.google.com.mx/maps/place/Farmacia-Consultorio+Avicena/@20.0981011,-98.7593787,14z/data=!4m8!1m2!2m1!1sfarmacia+avicena+pahuca!3m4!1s0x85d109833eaf5e0b:0x4e3e536483ba5db6!8m2!3d20.1185243!4d-98.7452352"><li> Ubicacion </li></a>
+			<a href="Servicios.html"><li> Servicios </li></a>
+		</ul>
+	</nav>
+	
+	<section id="seccion">
+		<article id="article1">
+		  <hgroups id="SyH">
+		  	<h2>Servicios y Horarios</h2>
+		  </hgroups>
+			<footer>
+				<img id="imagen1"src="ba6de8e4-222f-4402-839b-7d93e2d2c7ed.jpg"/>
+		</article>
+		
+		<nav class="doctores">
+		
+		 <ul>
+		 	
+		 	<li id="David"><article id="article2">
+			
+		  <hgroups>
+		  	<h2>Dr.Victor David Bautista Arreola</h2>
+			<h1>Medico Cirujano</h1>
+			<h1>Cédula Profesional:11777965</h1>
+		  </hgroups>
+		  <p>Universidad Autonoma del Estado de Hidalgo</p>
+		  <header id="espacio">   </header> 
+				<p>Certificación del Colegio Hidalguense de Medicina General</p> 
+				<p class="capacitacion"><B>Capacitación: </B></p>  
+				<ul><li>Atencion de padecimientos cronicos</li>
+				 <li>Control de embarazado,parto y puerperio</li> 
+				 <li>Control de nutricion </li>
+				 <li>Urgencias Medicas (ATLS y ACLS)</li> </ul>
+				 
+			<footer>
+				<img class="imagen2"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpPHXpDv8q1rO-5fGsJiyfagMMz-omHuB7rkL2oGmum_Pt10qN"/>
+				<p class="comentarios">Teléfono (771 202 1132)</p>
+			</footer>
+						<button onclick=""id="buttonC">Ver Cédula</button>
+						<img id="CDavid"src="InkedCedula David_LI.jpg"/>		
+			</article>
+			</li>
+			
+			<li id="Magda"><article id="article2">
+		  <hgroups>
+		  	<h2>Dra.Magdalena Aboytes Zavala</h2>
+			<h1>Medico Cirujano</h1>
+			<h1>Cédula Profesional:11783288</h1>
+		  </hgroups>
+			<p>Universidad Autonoma del Estado de Hidalgo  </p>
+			<p>Certificación del Colegio Hidalguense de Medicina General </p>
+			<p class="capacitacion"><B>Capacitación: </B></p>
+			<ul><li>Control de embarazado,parto y puerperio</li>
+			<li>Control de nutricion</li>
+			<li>Cirugia menor</li>
+			<li>Suturas y Procedimientos Medicos menores</li></ul>
+			<footer>
+				<img class="imagen2" src="https://image.freepik.com/vector-gratis/doctor-personaje-dibujos-animados-lindo_78094-158.jpg"/>
+				<p class="comentarios">Teléfono (771 410 9003)</p>
+			</footer>
+				<button onclick=""id="buttonC">Ver Cédula</button>
+						<img id="CMagda"src="InkedCedula Magda_LI.jpg"/>		
+			</article>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<a onclick=""id="LogoF"href="https://www.facebook.com/FCAvicena/"><img id="logoF"src="https://cdn.icon-icons.com/icons2/1269/PNG/512/1497553311-103_84832.png"/></a>
+	<a onclick=""id="LogoU"href="https://www.google.com.mx/maps/place/Farmacia-Consultorio+Avicena/@20.0981011,-98.7593787,14z/data=!4m8!1m2!2m1!1sfarmacia+avicena+pahuca!3m4!1s0x85d109833eaf5e0b:0x4e3e536483ba5db6!8m2!3d20.1185243!4d-98.7452352"><img id="logoU"src="https://store-images.s-microsoft.com/image/apps.1140.13510798886985863.25ece5e0-20aa-4572-9f8b-39bb74406f57.6fed7320-be8e-4177-9826-3a2cfa8fada9?w=180&h=180&q=60"/></a>
+	<footer id="footerP">
+		Derechos Reservados 2019-2022
+	</footer>
+	</div>
+<script src="Document1.js" type= "text/javascript">
+</script>
+</body>
+</html>

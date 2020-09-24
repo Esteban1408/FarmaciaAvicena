@@ -1,0 +1,25 @@
+nav,header,footer,section,aside{
+ display:block;
+}
+body{text-align: center;
+	min-height:100vh;
+	background-image: url(https://i.pinimg.com/originals/11/a1/f4/11a1f470cdde36a5095cd504d763699f.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}
+#rEGRESAR{
+	width:250px;
+	padding: 5px;
+	margin: center;
+}
+#REGRESAR #rEGRESAR{
+	text-decoration:none;
+	width:100px;
+	height:100px;
+	position:fixed;
+	top:0;
+	right:0;
+	
+}
