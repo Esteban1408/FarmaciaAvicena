@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<meta name="viewport">
+	<meta http-equiv="X-UA-Compatible"  content="ie=edge">
+	<link rel="stylesheet" href="Cita Medica.css"/>
+	
+</head>
+<body>
+<form action="enviar.php" method="POST">
+<a onclick=""id="REGRESAR"href="Avicena.html"><img id="rEGRESAR"src="http://www.clker.com/cliparts/l/z/Z/H/T/P/boton-gris-atras-bl-md.png"/></a>
+<script src="Cita Medica." type="text/javascript"></script>
+<div id="borde"> 
+<nav class="Mensaje">
+		<header><h1>Reserva tu cita</h1></header>
+		<ul><li><input class="texto"type="text" name="Nombre" placeholder="Nombre Completo" required></li>
+		<li><input class="texto"type="text" name="Correo" placeholder="Correo"required></li>
+		<li><input class="Datos" type="number" name="Telefono" placeholder="Teléfono" required></li>
+		<li><input class="Datos" type="number" name="Edad" min="1" max="100" step="1" placeholder="Edad" required></li>
+				<header><h3> Sexo: </h3></header>
+		<li><select class="Datos" name="Sexo" size="1" required>
+				<option value="Femenino">Femenino</option>
+				<option value="Masculino">Masculino</option>
+		</select></li>
+				<header><h3> Asunto: </h3></header>
+		<li><select class="Datos" name="Asunto" size="1" required>
+				<option value="Femenino">Consulta general</option>
+				<option value="Masculino">Control de enfermedades crónicas</option>
+				<option value="Masculino">Control de niño sano</option>
+				<option value="Masculino">Control de embarazo</option>
+				<option value="Masculino">Control de peso</option>
+				<option value="Masculino">Curaciones
+				</option>
+				<option value="Masculino">Toma de presión arterial</option>
+				<option value="Masculino">Suturas</option>
+				<option value="Masculino">Certificados médicos</option>
+				<option value="Masculino">Aplicación de inyecciones</option>
+				<option value="Masculino">Toma de Glucosa</option>
+				<option value="Masculino">Revisiones ginecológicas</option>
+				<option value="Masculino">Planificación familiar</option>
+		</select></li>
+				<header><h3> Dia y Hora: </h3></header>
+		<li><input class="Datos" id="hora"type="datetime-local" name="fechayhora" size="15" placeholder="Ingrese Fecha y Hora de Cita" required></li>
+				<li><input class="Boton1" type="submit" name="Enviar"value="Enviar"></li></ul>
+
+	</form>
+	<?php
+	include ("enviar.php");
+	?>
+</nav>
+</div>
+</body>
+</html>
